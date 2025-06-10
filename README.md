@@ -9,7 +9,7 @@ The individual capacity of CoP indices reported in the state-of-the-art was opti
 ```math
 genetic-distance = \sum_{n=1}^{N}\left\{\left\{\left[\left(\left(\left(\left(\left(\left(\left(\left({cumsum\left(CoP_y\left[n\right] \bmod12.27\right)}^2 \bmod 86.10\right) \bmod -91.84\right) \bmod 12.27\right)+89.13\right) \bmod 12.27\right) \bmod 4.62\right) \bmod -91.84\right) \bmod 89.13-12.27\right) \bmod 4.62\right]^2\right\}^2\right\}
 ```
-📌 You can also automatically compute the index with the following function [distance](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [distance](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
 :
 
@@ -18,7 +18,7 @@ genetic-distance = \sum_{n=1}^{N}\left\{\left\{\left[\left(\left(\left(\left(\le
 ```math
 genetic-area=\sum_{n=1}^{N}\left(47.39\ast\left(18.84\ast\left(-45.68\bmod\left(18.84\ast\left(18.84\bmod\left(18.84\ast\left(CoP_{rd}\left[n\right]-\sum_{n=1}^{N}\frac{CoP_y\left[n\right]}{N}\right)\right)\right)\right)\right)\right)\right)
 ```
-📌 You can also automatically compute the index with the following function [area](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [area](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
 
 ## Genetic-hybrid
@@ -47,7 +47,7 @@ hybrid_{item3}=\\
 {\left| CoP_{y}[n+1]-\sum_{i=1}^{len(m)}\frac{psML[i]}{len(m)}\right|^{\sqrt{2}}}
 ```
 
-📌 You can also automatically compute the index with the following function [hybrid](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [hybrid](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
 
 ## Genetic-frequency
@@ -109,7 +109,7 @@ frequency_{item8} =
     frequency_{item10} = \sum_{i=1}^{len(m)} \left( \left( 1 - 
  \frac{(\sum_{i=1}^{len(m)}(4*m^2) * psML[i]) \bmod 2}{ frequency_{item9} } \right) * psRD[i] \right) -2
 ```
-📌 You can also automatically compute the index with the following function [frequency](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [frequency](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
 
 ## Genetic-entropy:
@@ -132,7 +132,7 @@ entropy_{item2} = \\
    \\
    \frac{\sum_{i=1}^{len(psML)} \left( psML[i] - \sin \left( psRD[i]\bmod \frac{\sum_{i=1}^{len(psML)} psML[i] - \sin(entropy_{item1})} {len(psML)} \right) \right)}{len(psML)}
 ```
-📌 You can also automatically compute the index with the following function [entropy](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [entropy](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
 
 ## Genetic-fall risk
@@ -145,5 +145,5 @@ entropy_{item2} = \\
 
 Where $Cov$ refers to the covariance matrix, $freq$ is the vector of frequencies contained from 0.15 to 5 Hz of the $psRD$ spectrum, and $m$ is a vector containing the indices of $freq$.
 
-📌 You can also automatically compute the index with the following function [fall_risk](src/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](scr/how_to_use.py).
+📌 You can also automatically compute the index with the following function [fall_risk](/genetic_indices.py), it is recommended to see the file on [How to calculate a genetic CoP index?](/how_to_use.py).
 
